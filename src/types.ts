@@ -16,7 +16,7 @@ export interface RecyclerViewProps extends Rax.Attributes {
   /**
    * listen for drop-down refresh behavior
    * (监听下拉刷新的行为)
-   * @param {WeexRefreshEvent}event
+   * @param {WeexRefreshEvent} event
    */
   onRefresh?: (event: WeexRefreshEvent) => void;
 }
