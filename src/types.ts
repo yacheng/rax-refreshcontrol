@@ -19,6 +19,8 @@ export interface RecyclerViewProps extends Rax.Attributes {
    * @param {WeexRefreshEvent} event
    */
   onRefresh?: (event: WeexRefreshEvent) => void;
+
+  children?: Rax.RaxElement;
 }
 
 /**

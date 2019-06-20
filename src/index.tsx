@@ -6,8 +6,8 @@ const RefreshControl = (props:RecyclerViewProps) => {
   if (isWeex) {
     const displayRefresh = props.refreshing ? 'show' : 'hide';
     return (
-      <refresh {...this.props} display={displayRefresh} >
-        {this.props.children}
+      <refresh {...props} display={displayRefresh} >
+        {props.children}
       </refresh>
     );
   } else {
