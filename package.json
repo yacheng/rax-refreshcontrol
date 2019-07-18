@@ -1,6 +1,6 @@
 {
   "name": "rax-refreshcontrol",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "RefreshControl component for Rax.",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
@@ -9,6 +9,7 @@
     "clean": "rm -rf ./lib && rm -rf ./package-lock.json",
     "build": "npm run clean && rax-scripts build --type 'component'",
     "start": "rax-scripts start --type 'component' -p 8000",
+    "miniapp": "rax-scripts start --type 'component-miniapp'",
     "prepublishOnly": "npm run build",
     "test": "npm run build && rax-scripts test",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./src"
@@ -17,6 +18,9 @@
     "dist",
     "lib"
   ],
+  "miniappConfig": {
+    "main": "lib/miniapp/index"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raxjs/rax-refreshcontrol.git"
@@ -37,7 +41,7 @@
     "universal-env": "^0.6.6"
   },
   "peerDependencies": {
-    "rax": "^1.0.0"
+    "rax": "1.0.4"
   },
   "devDependencies": {
     "@types/ali-app": "^1.0.0",
@@ -49,7 +53,7 @@
     "driver-weex": "^1.0.0",
     "eslint": "^5.16.0",
     "eslint-config-rax": "^0.0.0",
-    "rax": "^1.0.0",
+    "rax": "1.0.4",
     "rax-scripts": "1.2.1",
     "rax-test-renderer": "^1.0.0"
   }
