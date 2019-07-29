@@ -1,36 +1,9 @@
-[![npm](https://img.shields.io/npm/v/rax-refreshcontrol.svg)](https://www.npmjs.com/package/rax-refreshcontrol)
-
-**描述：**
-滚动容器的下拉刷新功能
-## 支持
-仅WEEX
-## 安装
-
-```bash
-$ npm install rax-refreshcontrol --save
-```
-## 引用
-
-```jsx
-import RefreshControl from 'rax-refreshcontrol';
-```
-
-## 属性
-注：
-1、**支持**列表中的 <img alt="browser" src="https://gw.alicdn.com/tfs/TB1uYFobGSs3KVjSZPiXXcsiVXa-200-200.svg" width="25px" height="25px" />代表h5 <img alt="weex" src="https://gw.alicdn.com/tfs/TB1jM0ebMaH3KVjSZFjXXcFWpXa-200-200.svg" width="25px" height="25px" />代表weex  <img alt="miniApp" src="https://gw.alicdn.com/tfs/TB1bBpmbRCw3KVjSZFuXXcAOpXa-200-200.svg" width="25px" height="25px" />代表小程序
-
-| **属性**    | **类型**   | **默认值** | **必填** | **描述**           | **支持** |
-| ----------- | ---------- | ---------- | ------------ | ------------------ | ------------ |
-| refreshing     | `string` | -         |   false           | 是否显示 | <img alt="weex" src="https://gw.alicdn.com/tfs/TB1jM0ebMaH3KVjSZFjXXcFWpXa-200-200.svg" width="25px" height="25px" />|
-| onRefresh     | `function` | -         |   false           | 监听下拉刷新的行为 |<img alt="weex" src="https://gw.alicdn.com/tfs/TB1jM0ebMaH3KVjSZFjXXcFWpXa-200-200.svg" width="25px" height="25px" />|
-## 示例
-```jsx
 import {createElement, Component, render} from 'rax';
 import View from 'rax-view';
 import Text from 'rax-text';
 import DU from 'driver-universal';
 import RecyclerView from 'rax-recyclerview';
-import RefreshControl from 'rax-refreshcontrol';
+import RefreshControl from '../src/index';
 
 let arrayFrom = function(arrayLike /*, mapFn, thisArg */) {
   if (arrayLike == null) {
@@ -235,6 +208,3 @@ const styles = {
 };
 
 render(<RefreshControlDemo/>, document.body, { driver: DU });
-```
-
-
