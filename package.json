@@ -1,6 +1,6 @@
 {
   "name": "rax-refreshcontrol",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "RefreshControl component for Rax.",
   "license": "BSD-3-Clause",
   "main": "lib/index.js",
@@ -59,7 +59,7 @@
     "rax-recyclerview": "^1.0.0-beta.2",
     "rax-scripts": "1.2.1",
     "rax-test-renderer": "^1.0.0",
-    "rax-text": "^1.0.1-beta.1",
-    "rax-view": "^1.0.1-beta.11"
+    "rax-text": "^1.0.1",
+    "rax-view": "^1.0.1"
   }
 }

@@ -24,7 +24,6 @@ import RefreshControl from 'rax-refreshcontrol';
 | refreshing     | `string` | -         |   false           | 是否显示 | <img alt="weex" src="https://gw.alicdn.com/tfs/TB1jM0ebMaH3KVjSZFjXXcFWpXa-200-200.svg" width="25px" height="25px" />|
 | onRefresh     | `function` | -         |   false           | 监听下拉刷新的行为 |<img alt="weex" src="https://gw.alicdn.com/tfs/TB1jM0ebMaH3KVjSZFjXXcFWpXa-200-200.svg" width="25px" height="25px" />|
 ## 示例
-[在线 Demo](https://jsplayground.taobao.org/raxplayground/29f4bfab-4f83-489d-a0d7-0a7cee35d113)
 ```jsx
 import {createElement, Component, render} from 'rax';
 import View from 'rax-view';
