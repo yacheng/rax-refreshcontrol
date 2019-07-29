@@ -1,4 +1,4 @@
-import * as Rax from "rax";
+import * as Rax from 'rax';
 
 /**
  * component: refresh-control(下拉刷新)
@@ -12,7 +12,7 @@ export interface RecyclerViewProps extends Rax.Attributes {
    * whether to show
    * (是否显示)
    */
-  refreshing: boolean
+  refreshing: boolean;
   /**
    * listen for drop-down refresh behavior
    * (监听下拉刷新的行为)

@@ -2,7 +2,7 @@ import { createElement } from 'rax';
 import { RecyclerViewProps } from './types';
 import { isWeex } from 'universal-env';
 
-const RefreshControl = (props:RecyclerViewProps) => {
+const RefreshControl = (props: RecyclerViewProps) => {
   if (isWeex) {
     const displayRefresh = props.refreshing ? 'show' : 'hide';
     return (
