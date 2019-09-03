@@ -6,13 +6,13 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "clean": "rm -rf ./lib && rm -rf ./package-lock.json",
-    "build": "npm run clean && rax-scripts build --type 'component'",
-    "start": "rax-scripts start --type 'component' -p 8000",
-    "miniapp": "rax-scripts start --type 'component-miniapp'",
+    "clean": "rm -rf ./lib && rm -rf ./package-lock.json && rm -f ./yarn.lock",
+    "build": "npm run clean && rax-scripts build",
+    "start": "rax-scripts start",
+    "miniapp": "rax-scripts start",
     "prepublishOnly": "npm run build",
     "test": "npm run build && rax-scripts test",
-    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./src --fix"
+    "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx ./src"
   },
   "files": [
     "dist",
@@ -57,9 +57,11 @@
     "eslint-config-rax": "^0.0.0",
     "rax": "^1.0.0",
     "rax-recyclerview": "^1.0.0-beta.2",
-    "rax-scripts": "1.2.1",
+    "rax-plugin-component": "^0.1.9-0",
+    "rax-scripts": "^2.0.0",
     "rax-test-renderer": "^1.0.0",
     "rax-text": "^1.0.1",
-    "rax-view": "^1.0.1"
+    "rax-view": "^1.0.1",
+    "typescript": "^3.6.2"
   }
 }
